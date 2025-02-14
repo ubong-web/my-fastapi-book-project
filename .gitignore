@@ -52,8 +52,8 @@ coverage.xml
 cover/
 
 # conf file
-fastapi.conf
-.conf
+# fastapi.conf
+# .conf
 
 # Translations
 *.mo
