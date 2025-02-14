@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+      
     - name: Set Up Docker Buildx
       uses: docker/setup-buildx-action@v2
 
@@ -23,10 +26,6 @@ jobs:
       run: |
         docker build -t beejaay/fastapi-app:latest .
         docker push beejaay/fastapi-app:latest
-
-
-    - name: Checkout Repository
-      uses: actions/checkout@v3
 
     - name: Deploy to EC2 Server
       uses: appleboy/ssh-action@v0.1.7
