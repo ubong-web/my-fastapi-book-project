@@ -17,7 +17,6 @@ services:
       - "8000:8000"
 
 
-    restart: always
 
 
   nginx:
@@ -38,5 +37,5 @@ services:
 
       - fastapi_app
 
-    restart: always
+ 
 
