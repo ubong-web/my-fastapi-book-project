@@ -53,6 +53,7 @@ cover/
 
 # conf file
 fastapi.conf
+.conf
 
 # Translations
 *.mo
