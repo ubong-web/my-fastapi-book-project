@@ -37,7 +37,7 @@ jobs:
             cd fastapi-book-project
             git reset --hard HEAD  # Discard local changes
             git clean -fd          # Remove untracked files
-            git pull origin main   # Pull the latest changes from the repo
+            git fetch origin main   # Pull the latest changes from the repo
             docker-compose down --remove-orphans
             docker-compose build --no-cache  # Rebuild the image without cache
             docker-compose up -d --force-recreate --build  # Recreate containers with the new build
