@@ -37,7 +37,7 @@ jobs:
           
           cd /home/ubuntu
           git clone https://github.com/ubong-web/my-fastapi-book-project
-          cd fastapi-book-project
+          cd my-fastapi-book-project
           git fetch origin main   # Pull the latest changes from the repo
           git reset --hard origin/main  # Discard local changes
           docker-compose down --remove-orphans
